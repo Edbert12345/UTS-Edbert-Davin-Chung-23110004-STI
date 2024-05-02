@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>UTS Pemograman Web Dasar Edbert D.C</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">Edbert</a>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="page 2.html">About</a></li>
+                <li  class="dropdown-container">
+                    <a href="#">Project</a>
+                    <ul class="dropdown">
+                        <li><a href="project/latihan.html">Latihan 1</a></li>
+                        <li><a href="project/latihan2.html">Latihan 2</a></li>
+                        <li><a href="project/latihan3.html">Latihan 3</a></li>
+                        <li><a href="project/form.html">Latihan 4</a></li>
+                        <li><a href="project/latihan_form.html">Latihan 5</a></li>
+                        <li><a href="Starbucks Edbert/index.html">Bonus</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact us/index.html">Contact</a></li>
+                <li><a href="page 3.html">CV</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src=asset/stars.png id="stars">
+            <img src=asset/moon.png id="moon">
+            <img src=asset/mountains_behind.png id="mountains_behind">
+            <h2 id="text">Welcome</h2>
+            <a href="#" id="btn">Explore</a>
+            <img src=asset/mountains_front.png id="mountains_front">
+        </section>
+        <div class="sec">
+            <h2>Welcome</h2>
+            <p>Welcome to my UTS Project, hope you like it!!!</p>
+        </div>
+
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let mountains_behind = document.getElementById('mountains_behind');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let mountains_front = document.getElementById('mountains_front');
+            let header = document.querySelector('header');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars.style.left = value * 0.25 + 'px';
+                moon.style.top = value * 1.05 + 'px';
+                mountains_behind.style.top = value * 0.5 + 'px';
+                mountains_front.style.top = value * 0 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+                text.style.marginTop = value * 1.5 + 'px';
+                btn.style.marginTop = value * 1.5 + 'px';
+                header.style.top = value * 0.5 + 'px';
+            })
+        </script>
+    </body>
+</html>

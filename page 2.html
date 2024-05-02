@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#2b1055, #7597de);
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+header .logo
+{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.active
+{
+    background: #fff;
+    color: #2b1055;
+}
+header ul .dropdown-container .dropdown li
+{
+    display: block;
+}
+header ul .dropdown-container .dropdown
+{
+    max-width:280px;
+    width:100%;
+    position: absolute;
+    background: #2b1055;
+    right:25px;
+    z-index: 999;
+    display: none;
+}
+header .dropdown-container:hover .dropdown {
+    display:block;
+}
+header .dropdown-container .dropdown a {
+    border-radius:0;
+}
+.content
+{
+    position: relative;
+    padding: 100px;
+}
+.content h2
+{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+    
+}
+.text
+{
+    font-size: 1.2em;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+.text p
+{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#profile
+{
+    position: relative;
+    top: 15px;
+    left: 0;
+    width: 50%;
+    height: 50%;
+}
+</style>
+<body>
+    <header>
+        <a href="#" class="logo">Edbert</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#" class="active">About</a></li>
+            <li  class="dropdown-container">
+                <a href="#">Project</a>
+                <ul class="dropdown">
+                    <li><a href="project/latihan.html">Latihan 1</a></li>
+                    <li><a href="project/latihan2.html">Latihan 2</a></li>
+                    <li><a href="project/latihan3.html">Latihan 3</a></li>
+                    <li><a href="project/form.html">Latihan 4</a></li>
+                    <li><a href="project/latihan_form.html">Latihan 5</a></li>
+                    <li><a href="Starbucks Edbert/index.html">Bonus</a></li>
+                </ul>
+            </li>
+            <li><a href="contact us/index.html">Contact</a></li>
+            <li><a href="page 3.html">CV</a></li>
+        </ul>
+    </header>
+    <div class="content">
+        <h2>About Me</h2>
+        <hr>
+        <div class="text">
+        <img src="asset/0W0A2281.jpg" id="profile">
+        <p>Nama ku Edbert, aku seorang anak berusia 18 Tahun
+        saat ini aku menempuh pendidikan di ITBSS dengan mengambil prodi STI.
+        <br><br>
+        Aku seorang anak yang gemar berolahraga seperti Gym, SepakBola dan Basket.
+        salah satu hobi favoritku adalah Travelling ke tempat - tempat yang belum pernah aku kunjugin sebelumnya.
+        </p>
+        </div>
+    </div>
+</body>
+</html>
